@@ -1,0 +1,178 @@
+@import 'color';
+@import 'variable';
+
+
+body {
+    background-color: $theme-color;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+
+    .header {
+        z-index: 1;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        height: 75px;
+        width: 85%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.349);
+
+
+
+        &_logo {
+            a {
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 28px;
+                letter-spacing: 0px;
+
+                .logo-text {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &_nav {
+            display: flex;
+            position: absolute;
+            right: 25px;
+
+            &-list {
+                ul {
+                    li {
+                        margin: 0 25px;
+                    }
+                }
+            }
+
+            &-icon {
+                margin-left: 22px;
+
+                ul {
+                    li {
+                        margin-left: 7px;
+                    }
+                }
+            }
+
+            &-languageSwitch {
+                margin-left: 65px;
+                color: $white;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+
+                .btn {
+                    margin: 0 5px;
+                    position: relative;
+                    font: $smaill_small;
+                }
+
+                .btn.chinese:after {
+                    position: absolute;
+                    right: -6px;
+                    top: 7px;
+                    width: 1px;
+                    height: 12px;
+                    content: "";
+                    background-color: rgb(255, 255, 255);
+                }
+            }
+        }
+
+    }
+
+    .section_hero {
+        width: 100%;
+        position: relative;
+
+        &::after {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.247);
+            content: "";
+        }
+
+
+        &-img {
+            width: 100%;
+
+            img {
+
+
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+.arrow {
+    &-img {
+        margin: 20px auto 80px;
+        width: 35px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.section_main {
+
+    &-pic {
+        width: 100%;
+        display: flex;
+
+        &-img {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &-text {
+
+        width: 85%;
+        margin: 2.5em auto 8em;
+
+        .title {
+            margin-bottom: 8px;
+        }
+
+        section {
+            position: relative;
+            left: 4px;
+        }
+    }
+}
+
+
+.footer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 33px;
+    justify-content: space-between;
+    border-top: 1px solid $grey;
+
+    &_text {
+        color: $grey;
+        font-size: $small;
+    }
+}
