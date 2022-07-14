@@ -1,0 +1,46 @@
+.news {
+    margin: 2em;
+
+    &-item {
+        margin: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+
+        &-pic {}
+
+        &-text {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 5px 7px 0px rgba(128, 128, 128, 0.521);
+            width: 850px;
+            height: 664px;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin-left: 15%;
+            }
+
+            .date {
+                margin: 1.3em 15%;
+            }
+
+            section {
+                margin: 0.4em auto;
+                width: 70%;
+                line-height: 1.8em;
+                letter-spacing: 4px;
+            }
+        }
+    }
+
+
+}
+
+.news-btn {
+    margin: 2em auto;
+}
