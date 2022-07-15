@@ -4,6 +4,7 @@
 @import 'index';
 @import 'about';
 @import 'news';
+@import 'process';
 
 
 body {
@@ -15,11 +16,12 @@ body {
 .white {
     box-shadow: 0px 2px 6px 0px rgba(128, 128, 128, 0.527);
     width: 100%;
-
+    z-index: 1;
+    position: relative;
     background-color: $white;
 
     .header {
-        z-index: 1;
+
         display: flex;
         position: relative;
         align-items: center;

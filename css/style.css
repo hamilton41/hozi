@@ -361,6 +361,103 @@ ul {
   margin: 2em auto;
 }
 
+.process {
+  background-color: #FCFCFC;
+  width: 59%;
+  margin: auto;
+  padding: 1px 0 20px 0;
+  position: relative;
+}
+.process-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 32%;
+  margin-top: 6em;
+  width: 617px;
+}
+.process-item-number {
+  position: absolute;
+  top: -22px;
+  left: -56px;
+}
+.process-item-pic {
+  background-color: rgb(232, 232, 232);
+  border-radius: 50%;
+  display: flex;
+  width: 158px;
+  height: 158px;
+  align-items: center;
+  justify-content: center;
+}
+.process-item-text {
+  margin-left: 4em;
+}
+.process::after {
+  position: absolute;
+  width: 3.5px;
+  height: 110em;
+  content: "";
+  background-color: rgb(30, 30, 30);
+  left: 183px;
+  top: 106px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.reserve {
+  background-color: #FCFCFC;
+  width: 59%;
+  margin: 2.3em auto 0em auto;
+  position: relative;
+  padding-top: 2.5em;
+}
+.reserve .title {
+  text-align: center;
+}
+.reserve section {
+  text-align: center;
+}
+.reserve-smallBox {
+  font-size: 16px;
+  background-color: rgb(39, 44, 50);
+  color: #FCFCFC;
+  font-weight: 200;
+  letter-spacing: 3px;
+  width: 38px;
+  padding: 6px;
+  border-radius: 3px;
+  position: absolute;
+  top: 100px;
+  right: 353px;
+}
+.reserve form {
+  margin: 5em auto;
+}
+.reserve-inputBox {
+  margin: 3em auto;
+  width: 438px;
+  position: relative;
+  border-bottom: 2px solid rgb(30, 30, 30);
+}
+.reserve-inputBox input {
+  width: 405px;
+  height: 40px;
+  border: none;
+  left: 33px;
+  top: 0px;
+  position: relative;
+}
+.reserve-inputBox input::placeholder {
+  font-size: 18px;
+  color: rgb(183, 183, 183);
+}
+.reserve-inputBox img {
+  position: absolute;
+  top: 9px;
+  left: 0px;
+}
+
 body {
   background-color: rgb(237, 229, 218);
 }
@@ -368,10 +465,11 @@ body {
 .white {
   box-shadow: 0px 2px 6px 0px rgba(128, 128, 128, 0.527);
   width: 100%;
+  z-index: 1;
+  position: relative;
   background-color: #FCFCFC;
 }
 .white .header {
-  z-index: 1;
   display: flex;
   position: relative;
   align-items: center;
