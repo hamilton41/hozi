@@ -127,6 +127,11 @@ q {
   line-height: 1.5em;
 }
 
+.big-title {
+  font-size: 36px;
+  font-weight: 500;
+}
+
 section {
   font-size: 20px;
   letter-spacing: 2px;
@@ -137,6 +142,20 @@ section {
 ul {
   display: flex;
   list-style: none;
+}
+
+.big-btn {
+  background-color: rgb(30, 30, 30);
+  width: 266px;
+  height: 72px;
+  color: #FCFCFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 
 .designEx-btn {
@@ -210,20 +229,9 @@ ul {
 }
 
 .clickMore-btn {
-  background-color: rgb(30, 30, 30);
-  width: 266px;
-  height: 72px;
-  color: #FCFCFC;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  border-radius: 10px;
   margin-bottom: 9em;
   position: relative;
   bottom: 2em;
-  font-weight: 300;
-  letter-spacing: 2px;
 }
 
 .container {
@@ -358,12 +366,46 @@ ul {
 }
 
 .news-btn {
-  margin: 2em auto;
+  margin: 0em auto 4em;
+  position: relative;
+  bottom: 1em;
+}
+
+.page-process .process::after {
+  position: absolute;
+  width: 3.5px;
+  height: 110em;
+  content: "";
+  background-color: rgb(30, 30, 30);
+  left: 183px;
+  top: 106px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.page-process .reserve::after {
+  position: absolute;
+  width: 3.5px;
+  height: 3em;
+  content: "";
+  background-color: rgb(30, 30, 30);
+  left: 183px;
+  top: 0px;
+}
+.page-process .reserve::before {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  content: "";
+  background-color: rgb(30, 30, 30);
+  left: 172px;
+  top: 3em;
+  border-radius: 50%;
 }
 
 .process {
+  box-shadow: 0px 4px 15px 0px rgba(143, 143, 143, 0.425);
   background-color: #FCFCFC;
-  width: 59%;
+  width: 1122px;
   margin: auto;
   padding: 1px 0 20px 0;
   position: relative;
@@ -393,30 +435,23 @@ ul {
 .process-item-text {
   margin-left: 4em;
 }
-.process::after {
-  position: absolute;
-  width: 3.5px;
-  height: 110em;
-  content: "";
-  background-color: rgb(30, 30, 30);
-  left: 183px;
-  top: 106px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
 .reserve {
+  box-shadow: 0px 4px 15px 0px rgba(143, 143, 143, 0.425);
   background-color: #FCFCFC;
-  width: 59%;
+  width: 1122px;
   margin: 2.3em auto 0em auto;
   position: relative;
-  padding-top: 2.5em;
+  padding: 2.2em 0 2em;
 }
 .reserve .title {
   text-align: center;
+  font-weight: 400;
+  margin-bottom: 0.4em;
 }
 .reserve section {
   text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 3.7em;
 }
 .reserve-smallBox {
   font-size: 16px;
@@ -428,11 +463,24 @@ ul {
   padding: 6px;
   border-radius: 3px;
   position: absolute;
-  top: 100px;
-  right: 353px;
+  top: 137px;
+  right: 335px;
+  text-align: center;
 }
 .reserve form {
-  margin: 5em auto;
+  margin: 0em auto;
+  padding: 0em 0 1em;
+  position: relative;
+}
+.reserve form .title {
+  margin-top: 2em;
+}
+.reserve form .reserve-smallBox {
+  top: 31.5em;
+}
+.reserve form .container {
+  height: 387px;
+  overflow: hidden;
 }
 .reserve-inputBox {
   margin: 3em auto;
@@ -440,7 +488,8 @@ ul {
   position: relative;
   border-bottom: 2px solid rgb(30, 30, 30);
 }
-.reserve-inputBox input {
+.reserve-inputBox input,
+.reserve-inputBox select {
   width: 405px;
   height: 40px;
   border: none;
@@ -448,14 +497,76 @@ ul {
   top: 0px;
   position: relative;
 }
-.reserve-inputBox input::placeholder {
+.reserve-inputBox input::placeholder,
+.reserve-inputBox select::placeholder {
   font-size: 18px;
   color: rgb(183, 183, 183);
+}
+.reserve-inputBox select {
+  font-size: 18px;
+  color: rgb(183, 183, 183);
+  appearance: none;
+  background: url("../img/reserve-arrowDown.svg") no-repeat right center transparent;
+  background-size: 3%;
 }
 .reserve-inputBox img {
   position: absolute;
   top: 9px;
   left: 0px;
+}
+.reserve-clickMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 4.5em;
+}
+.reserve-clickMore section {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.reserve-clickMore::after {
+  position: absolute;
+  width: 266px;
+  height: 1px;
+  right: 146px;
+  top: 23px;
+  content: "";
+  background-color: rgb(226, 226, 226);
+}
+.reserve-clickMore::before {
+  position: absolute;
+  width: 266px;
+  height: 1px;
+  left: 146px;
+  top: 23px;
+  content: "";
+  background-color: rgb(226, 226, 226);
+}
+.reserve-btn {
+  margin: 5em auto 1em;
+}
+.reserve-text {
+  margin-bottom: 2em !important;
+}
+
+.page-reserve .process {
+  box-sizing: border-box;
+  height: 300px;
+  padding-top: 6em;
+}
+.page-reserve .process ::after {
+  width: 0;
+  height: 0;
+}
+.page-reserve .process .reserve-clickMore::after {
+  width: 266px;
+  height: 1px;
+}
+.page-reserve .reserve {
+  padding-bottom: 13em;
 }
 
 body {

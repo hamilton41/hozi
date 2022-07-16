@@ -139,6 +139,11 @@ $smaill_small: 16px;
     line-height: 1.5em;
 }
 
+.big-title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
 section {
     font-size: $mid;
     letter-spacing: 2px;
@@ -151,4 +156,18 @@ section {
 ul {
     display: flex;
     list-style: none;
+}
+
+.big-btn {
+    background-color: $black;
+    width: 266px;
+    height: 72px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 200;
+    letter-spacing: 2px;
 }

@@ -1,0 +1,21 @@
+.page-reserve {
+    .process {
+        box-sizing: border-box;
+        height: 300px;
+        padding-top: 6em;
+
+        ::after {
+            width: 0;
+            height: 0;
+        }
+
+        .reserve-clickMore::after {
+            width: 266px;
+            height: 1px;
+        }
+    }
+
+    .reserve {
+        padding-bottom: 13em;
+    }
+}
