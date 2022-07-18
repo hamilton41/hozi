@@ -569,6 +569,47 @@ ul {
   padding-bottom: 13em;
 }
 
+.appointmentCompleted {
+  display: flex;
+  justify-content: center;
+  margin-top: 12em;
+  width: 80%;
+  margin: 12em auto 12.5em 17%;
+  height: 27em;
+  position: relative;
+}
+.appointmentCompleted::after {
+  position: absolute;
+  width: 1px;
+  height: 470px;
+  top: 8px;
+  left: 640px;
+  content: "";
+  background-color: rgb(112, 112, 112);
+}
+.appointmentCompleted .text-1 .big-title {
+  margin-bottom: 0.8em;
+}
+.appointmentCompleted .text-2 {
+  width: 550px;
+  margin-left: 40%;
+  margin-top: 9em;
+}
+.appointmentCompleted .text-2 .phone-number {
+  margin: 2em 0 3em 0;
+  display: flex;
+  align-items: center;
+}
+.appointmentCompleted .text-2 .phone-number-text {
+  font-size: 48px;
+}
+.appointmentCompleted .text-2 section {
+  line-height: 1.6em;
+}
+.appointmentCompleted .text-2 section span {
+  border-bottom: 1px solid black;
+}
+
 body {
   background-color: rgb(237, 229, 218);
 }
