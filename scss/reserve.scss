@@ -19,3 +19,52 @@
         padding-bottom: 13em;
     }
 }
+
+@media (max-width:1141px) {
+    .page-reserve {
+        .process {
+
+
+            .reserve-clickMore {
+                &::after {
+                    right: 5%;
+                    width: 25%;
+                }
+
+
+            }
+
+        }
+    }
+
+
+}
+
+@media (max-width:700px) {
+    .page-reserve {
+        .reserve {
+            margin-top: 0;
+            box-shadow: 0px 6px 15px 0px rgba(143, 143, 143, 0.425);
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .page-reserve {
+        .process {
+            section {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .page-reserve {
+        .process {
+            section {
+                font-size: 14px;
+            }
+        }
+    }
+}
