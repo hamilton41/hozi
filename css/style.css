@@ -285,6 +285,47 @@ ul {
   left: 4px;
 }
 
+.index-rwd {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .container .section-hero-img {
+    overflow: hidden;
+  }
+  .container .section-hero-img img.index-rwd {
+    display: block;
+  }
+  .container .section-hero-img img {
+    display: none;
+  }
+
+  .section-main-pic {
+    flex-direction: column;
+  }
+  .section-main-pic-img img.index-rwd {
+    display: block;
+  }
+  .section-main-pic-img img {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .section-main-text .title {
+    font-size: 28px;
+  }
+  .section-main-text section {
+    font-size: 16px;
+  }
+}
+@media (max-width: 514px) {
+  .section-main-text .title {
+    font-size: 20px;
+  }
+  .section-main-text section {
+    font-size: 12px;
+  }
+}
 .about .title {
   margin: 3em 0em 2em 4em;
   font-weight: 400;
