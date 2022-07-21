@@ -7,6 +7,7 @@
 @import 'process';
 @import 'reserve';
 @import 'appointmentCompleted';
+@import 'product';
 
 
 body {
@@ -22,7 +23,12 @@ body {
     position: relative;
     background-color: $white;
 
+
+
     .header {
+        .menu-btn {
+            display: none;
+        }
 
         display: flex;
         position: relative;
@@ -250,4 +256,63 @@ body {
         }
 
     }
+}
+
+@media (max-width:1160px) {
+    .white {
+        .header {
+            justify-content: center;
+
+            .menu-btn {
+                display: block;
+                position: absolute;
+                left: 20px;
+            }
+
+            &-nav {
+                display: none;
+            }
+
+            &-logo {
+                position: relative;
+                right: 20px;
+            }
+        }
+    }
+
+    .nav-open {
+
+        .white {
+            .header {
+                &-nav {
+                    background-color: $theme-color;
+                    display: block;
+                    width: 200px;
+                    left: 0;
+                    top: 0;
+                    height: 100vh;
+                    position: fixed;
+                    padding-top: 6em;
+
+                    .picked::after {
+                        height: 0px;
+                    }
+
+                    &-list {
+                        ul {
+                            flex-direction: column;
+                            width: 88%;
+                            align-items: center;
+
+                            li {
+                                margin: 1em 0;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
 }
