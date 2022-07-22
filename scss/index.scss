@@ -1,3 +1,9 @@
+.index {
+    .white {
+        display: none;
+    }
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -182,4 +188,18 @@
 
     }
 
+}
+
+@media(max-width:1280px) {
+    .index {
+        .white {
+            display: block;
+        }
+    }
+
+    .container {
+        .header {
+            display: none;
+        }
+    }
 }

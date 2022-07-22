@@ -10,6 +10,50 @@
 </head>
 
 <body>
+    <div class="index">
+        <div class="white">
+            <div class="header">
+                <div class="menu-btn"><img src="../img/menu-rwd.svg" alt=""></div>
+                <div class="header-logo">
+                    <a href="./index.html">
+                        <img src="../img/logo-black.svg" alt="">
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <div class="header-nav-list">
+                        <ul>
+                            <li>
+                                <a href="./page/about.html">
+                                    <img src="../img/header-nav-rwd-1.svg" alt=""> 關於何己</a>
+                            </li>
+                            <li><a href="./page/designEx.html">
+                                    <img src="../img/header-nav-rwd-2.svg" alt=""> 設計案例</a></li>
+                            <li><a href="./page/news.html">
+                                    <img src="../img/header-nav-rwd-3.svg" alt=""> 媒體報導</a></li>
+                            <li><a href="./page/reserve.html" class="picked">
+                                    <img src="../img/header-nav-rwd-4.svg" alt=""> 聯繫我們</a></li>
+                            <li><a href="./page/process.html">
+                                    <img src="../img/header-nav-rwd-5.svg" alt=""> 服務流程</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav-icon">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="../img/facebook-black.svg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="../img/youtube-black.svg" alt=""></a></li>
+                            <li> <a href="#"><img src="../img/insta-black.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav-languageSwitch">
+                        <div class="btn chinese">CH</div>
+                        <div class="btn english">EN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="header">
             <div class="header-logo">
@@ -101,7 +145,14 @@
         </div>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-btn').click(function () {
+                $('body').toggleClass('nav-open');
+            })
+        })
+    </script>
 </body>
 
 </html>

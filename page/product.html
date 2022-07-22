@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body class="nav-open">
+<body>
     <div class="white">
         <div class="header">
             <div class="menu-btn"><img src="../img/menu-rwd.svg" alt=""></div>
@@ -146,7 +146,14 @@
     </div>
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-btn').click(function () {
+                $('body').toggleClass('nav-open');
+            })
+        })
+    </script>
 
 </body>
 

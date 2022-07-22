@@ -69,6 +69,10 @@ body {
 
 
                     li {
+                        img {
+                            display: none;
+                        }
+
                         position: relative;
                         margin: 0 25px;
                     }
@@ -280,16 +284,33 @@ body {
         }
     }
 
+    body {
+        left: 0px;
+    }
+
+    .white {
+        .header {
+            &-nav {
+                left: -220px;
+            }
+        }
+    }
+
     .nav-open {
+        overflow-x: hidden;
+        position: relative;
+        left: 220px;
+
 
         .white {
             .header {
                 &-nav {
+                    box-shadow: 2px 0px 5px 0px rgba(138, 138, 138, 0.39);
                     background-color: $theme-color;
                     display: block;
-                    width: 200px;
-                    left: 0;
+                    width: 220px;
                     top: 0;
+                    left: 0px;
                     height: 100vh;
                     position: fixed;
                     padding-top: 6em;
@@ -299,15 +320,36 @@ body {
                     }
 
                     &-list {
+
                         ul {
                             flex-direction: column;
                             width: 88%;
                             align-items: center;
 
                             li {
+
+                                img {
+                                    display: inline-block;
+                                }
+
                                 margin: 1em 0;
                             }
                         }
+                    }
+
+                    &-icon {
+                        margin-top: 12em;
+                        margin-left: 3em;
+
+                        li {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &-languageSwitch {
+                        position: absolute;
+                        top: 2.5em;
+                        margin-left: 41px;
                     }
 
                 }

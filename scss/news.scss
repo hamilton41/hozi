@@ -10,6 +10,22 @@
 
         &-pic {
             width: 50%;
+            position: relative;
+
+            .back-btn {
+                width: 37px;
+                position: absolute;
+                top: 43%;
+                left: 0.5em;
+            }
+
+            .next-btn {
+                width: 37px;
+                position: absolute;
+                top: 43%;
+                right: 0.8em;
+
+            }
 
             img {
                 width: 100%;

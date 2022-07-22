@@ -199,12 +199,67 @@ ul {
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 0.6em;
 }
 .designEx .container-item {
   margin-bottom: 7em;
 }
 .designEx .container-item-pic {
+  position: relative;
   width: 830px;
+}
+.designEx .container-item-pic:hover .designEx-hover {
+  opacity: 100;
+  transition: all 0.1s;
+}
+.designEx .container-item-pic .designEx-hover {
+  transition: all 0.1s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+  color: #FCFCFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.designEx .container-item-pic .designEx-hover .title {
+  position: relative;
+  font-weight: 300;
+}
+.designEx .container-item-pic .designEx-hover .title::after {
+  width: 70px;
+  height: 1px;
+  background-color: #FCFCFC;
+  content: "";
+  position: absolute;
+  bottom: -1.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.designEx .container-item-pic .designEx-hover .subtitle {
+  font-size: 20px;
+  font-weight: 30;
+  position: relative;
+  top: 3em;
+}
+.designEx .container-item-pic .designEx-hover .sideText {
+  position: absolute;
+  top: 5em;
+  right: -1.8em;
+  transform: rotate(90deg);
+  letter-spacing: 2px;
+}
+.designEx .container-item-pic .designEx-hover img {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  width: 60px;
 }
 .designEx .container-item-pic img {
   width: 100%;
@@ -303,6 +358,10 @@ ul {
     width: 70px;
   }
 }
+.index .white {
+  display: none;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -407,6 +466,15 @@ ul {
   }
   .section-main-text section {
     font-size: 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .index .white {
+    display: block;
+  }
+
+  .container .header {
+    display: none;
   }
 }
 .about .title {
@@ -579,6 +647,19 @@ ul {
 }
 .news-item-pic {
   width: 50%;
+  position: relative;
+}
+.news-item-pic .back-btn {
+  width: 37px;
+  position: absolute;
+  top: 43%;
+  left: 0.5em;
+}
+.news-item-pic .next-btn {
+  width: 37px;
+  position: absolute;
+  top: 43%;
+  right: 0.8em;
 }
 .news-item-pic img {
   width: 100%;
@@ -1037,7 +1118,7 @@ ul {
 }
 .appointmentCompleted {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 12em;
   width: 80%;
   margin: 12em auto 12.5em 17%;
@@ -1049,7 +1130,7 @@ ul {
   width: 1px;
   height: 470px;
   top: 8px;
-  left: 640px;
+  left: 43%;
   content: "";
   background-color: rgb(112, 112, 112);
 }
@@ -1058,7 +1139,6 @@ ul {
 }
 .appointmentCompleted .text-2 {
   width: 550px;
-  margin-left: 40%;
   margin-top: 9em;
 }
 .appointmentCompleted .text-2 .phone-number {
@@ -1076,6 +1156,15 @@ ul {
   border-bottom: 1px solid black;
 }
 
+@media (max-width: 1341px) {
+  .appointmentCompleted {
+    flex-direction: column;
+    margin: 12em auto 24em auto;
+  }
+  .appointmentCompleted::after {
+    height: 0;
+  }
+}
 .product-bg {
   width: 100%;
 }
@@ -1343,6 +1432,9 @@ body {
   position: relative;
   margin: 0 25px;
 }
+.white .header-nav-list ul li img {
+  display: none;
+}
 .white .header-nav-icon {
   margin-left: 22px;
 }
@@ -1495,12 +1587,26 @@ body {
     right: 20px;
   }
 
+  body {
+    left: 0px;
+  }
+
+  .white .header-nav {
+    left: -220px;
+  }
+
+  .nav-open {
+    overflow-x: hidden;
+    position: relative;
+    left: 220px;
+  }
   .nav-open .white .header-nav {
+    box-shadow: 2px 0px 5px 0px rgba(138, 138, 138, 0.39);
     background-color: rgb(237, 229, 218);
     display: block;
-    width: 200px;
-    left: 0;
+    width: 220px;
     top: 0;
+    left: 0px;
     height: 100vh;
     position: fixed;
     padding-top: 6em;
@@ -1515,6 +1621,21 @@ body {
   }
   .nav-open .white .header-nav-list ul li {
     margin: 1em 0;
+  }
+  .nav-open .white .header-nav-list ul li img {
+    display: inline-block;
+  }
+  .nav-open .white .header-nav-icon {
+    margin-top: 12em;
+    margin-left: 3em;
+  }
+  .nav-open .white .header-nav-icon li {
+    margin-right: 10px;
+  }
+  .nav-open .white .header-nav-languageSwitch {
+    position: absolute;
+    top: 2.5em;
+    margin-left: 41px;
   }
 }
 
