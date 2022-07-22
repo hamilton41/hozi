@@ -72,3 +72,33 @@
         margin: 12em auto 24em auto;
     }
 }
+
+@media (max-width:650px) {
+    .appointmentCompleted {
+        .text-2 {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:440px) {
+    .appointmentCompleted {
+        .title {
+            font-size: 24px;
+        }
+
+        section {
+            font-size: 16px;
+        }
+
+        .text-2 {
+            .phone-number {
+                &-text {
+                    font-size: 36px;
+                }
+            }
+
+            width: 100%;
+        }
+    }
+}

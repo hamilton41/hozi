@@ -870,6 +870,7 @@ ul {
   margin-top: 2em;
 }
 .reserve form .container {
+  transition: height 0.4s;
   height: 387px;
   overflow: hidden;
 }
@@ -904,6 +905,21 @@ ul {
   position: absolute;
   top: 9px;
   left: 0px;
+}
+.reserve-inputBox-text {
+  height: 196px;
+}
+.reserve-inputBox-text textarea {
+  font-size: 18px;
+  height: 196px;
+  width: 100%;
+  border: 2px solid rgb(30, 30, 30);
+  border-radius: 5px;
+  resize: none;
+}
+.reserve-inputBox-text textarea::placeholder {
+  font-size: 18px;
+  color: rgb(183, 183, 183);
 }
 .reserve-clickMore {
   display: flex;
@@ -941,6 +957,11 @@ ul {
 }
 .reserve-text {
   margin-bottom: 2em !important;
+}
+
+.open-more {
+  height: 1083px !important;
+  transition: height 0.4s;
 }
 
 @media (max-width: 1141px) {
@@ -1163,6 +1184,25 @@ ul {
   }
   .appointmentCompleted::after {
     height: 0;
+  }
+}
+@media (max-width: 650px) {
+  .appointmentCompleted .text-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .appointmentCompleted .title {
+    font-size: 24px;
+  }
+  .appointmentCompleted section {
+    font-size: 16px;
+  }
+  .appointmentCompleted .text-2 {
+    width: 100%;
+  }
+  .appointmentCompleted .text-2 .phone-number-text {
+    font-size: 36px;
   }
 }
 .product-bg {
@@ -1528,6 +1568,14 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.messenger-btn {
+  z-index: 1;
+  width: 86px;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+}
+
 .footer {
   width: 85%;
   margin: auto;
@@ -1601,7 +1649,7 @@ body {
     left: 220px;
   }
   .nav-open .white .header-nav {
-    box-shadow: 2px 0px 5px 0px rgba(138, 138, 138, 0.39);
+    box-shadow: inset -2px 0px 5px 0px rgba(138, 138, 138, 0.39);
     background-color: rgb(237, 229, 218);
     display: block;
     width: 220px;
@@ -1636,6 +1684,11 @@ body {
     position: absolute;
     top: 2.5em;
     margin-left: 41px;
+  }
+}
+@media (max-width: 870px) {
+  .messenger-btn {
+    display: none;
   }
 }
 

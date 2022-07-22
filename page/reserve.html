@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div class="messenger-btn">
+        <img src="../img/messenger-btn.png" alt="">
+    </div>
     <div class="white">
         <div class="header">
             <div class="menu-btn"><img src="../img/menu-rwd.svg" alt=""></div>
@@ -109,6 +112,9 @@
                         </select>
                         <img src="../img/input-icon.svg" alt="">
                     </div>
+                    <div class="reserve-inputBox reserve-inputBox-text">
+                        <textarea name="text" id="" cols="30" rows="10" placeholder="喜歡採光好的...."></textarea>
+                    </div>
                 </div>
 
                 <div class="reserve-btn big-btn">確認送出預約資料</div>
@@ -147,6 +153,10 @@
         $(document).ready(function () {
             $('.menu-btn').click(function () {
                 $('body').toggleClass('nav-open');
+            })
+
+            $('.reserve-clickMore').click(function () {
+                $('.container').toggleClass('open-more');
             })
         })
     </script>

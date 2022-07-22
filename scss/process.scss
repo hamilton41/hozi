@@ -133,6 +133,7 @@
 
 
         .container {
+            transition: height 0.4s;
             height: 387px;
             overflow: hidden;
         }
@@ -169,12 +170,30 @@
             background-size: 3%;
         }
 
-
-
         img {
             position: absolute;
             top: 9px;
             left: 0px;
+
+        }
+
+        &-text {
+            textarea {
+                font-size: $small;
+                height: 196px;
+                width: 100%;
+                border: 2px solid $black;
+                border-radius: 5px;
+                resize: none;
+
+                &::placeholder {
+                    font-size: $small;
+                    color: $grey;
+                }
+
+            }
+
+            height: 196px;
 
         }
     }
@@ -226,6 +245,11 @@
     &-text {
         margin-bottom: 2em !important;
     }
+}
+
+.open-more {
+    height: 1083px !important;
+    transition: height 0.4s;
 }
 
 
