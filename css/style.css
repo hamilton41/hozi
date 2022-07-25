@@ -1576,6 +1576,9 @@ body {
     left: 220px;
     transition: left 0.2s;
   }
+  .nav-open html {
+    overflow-x: hidden;
+  }
   @keyframes a {
     0% {
       left: -220px;

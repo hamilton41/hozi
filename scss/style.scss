@@ -401,6 +401,10 @@ body {
     }
 
     .nav-open {
+        html {
+            overflow-x: hidden;
+        }
+
         overflow-x: hidden;
         left: 220px;
         transition: left 0.2s;
