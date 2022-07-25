@@ -110,11 +110,8 @@ q {
 }
 
 /*--------------------------------------------------------------*/
-body,
 html {
-  position: relative;
-  width: 100%;
-  overflow-x: hidden;
+  position: static;
 }
 
 .designex-btn {
