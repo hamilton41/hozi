@@ -286,7 +286,7 @@ q {
     width: 100%;
   }
 }
-.index .white {
+.index .white-bg-header {
   display: none;
 }
 
@@ -389,7 +389,7 @@ q {
   }
 }
 @media (max-width: 1400px) {
-  .index .white {
+  .index .white-bg-header {
     display: block;
   }
 
