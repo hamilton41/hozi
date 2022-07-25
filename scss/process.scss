@@ -134,7 +134,7 @@
 
         .container {
             transition: height 0.4s;
-            height: 387px;
+            height: 420px;
             overflow: hidden;
         }
 
@@ -166,7 +166,7 @@
             font-size: $small;
             color: $grey;
             appearance: none;
-            background: url("../img/reserve-arrowDown.svg") no-repeat right center transparent;
+            background: url("../img/reserve-arrowdown.svg") no-repeat right center transparent;
             background-size: 3%;
         }
 
@@ -253,7 +253,7 @@
 }
 
 
-@media (max-width:1141px) {
+@media (max-width:1200px) {
     .process {
         width: 100%;
     }
@@ -297,7 +297,7 @@
     }
 }
 
-@media (max-width:924px) {
+@media (max-width:992px) {
 
     .page-process {
         .process {
@@ -332,7 +332,7 @@
     }
 }
 
-@media (max-width:790px) {
+@media (max-width:768px) {
     .process {
 
         &-item {
@@ -346,8 +346,8 @@
             }
 
             &-text {
-                margin-left: 2em;
-                width: 60%;
+                margin-left: 1em;
+                width: 55%;
             }
 
             width: 80%;
@@ -358,10 +358,11 @@
 
 }
 
-@media (max-width:600px) {
+@media (max-width:576px) {
     .process {
 
         &-item {
+            width: 70%;
             margin-left: 18% !important;
 
             &-pic {
@@ -376,54 +377,8 @@
             &-text {
 
                 .title {
-                    font-size: 24px;
-                    letter-spacing: 2px;
-                }
-
-                section {
-                    font-size: 16px;
-                }
-            }
-
-
-            width: 70%;
-        }
-    }
-
-    .reserve {
-        .title {
-            font-size: 24px;
-        }
-
-        &-smallBox {
-            right: -26px;
-        }
-
-        section {
-            font-size: 16px;
-        }
-
-        &-inputBox {
-            width: 338px;
-
-            input,
-            select {
-                width: 305px;
-            }
-
-        }
-    }
-}
-
-@media (max-width:500px) {
-    .process {
-        &-item {
-            &-text {
-                margin-left: 1em;
-                width: 55%;
-
-                .title {
                     font-size: 20px;
+                    letter-spacing: 2px;
                 }
 
                 section {
@@ -442,6 +397,10 @@
         }
 
 
+        &-smallBox {
+            right: -4px;
+        }
+
         section {
             font-size: 14px;
         }
@@ -449,20 +408,12 @@
         &-inputBox {
             width: 318px;
 
+
             input,
             select {
                 width: 285px;
             }
 
-        }
-    }
-}
-
-@media (max-width:365px) {
-
-    .reserve {
-        &-smallBox {
-            right: -4px;
         }
     }
 }

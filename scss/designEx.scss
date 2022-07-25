@@ -1,4 +1,4 @@
-.designEx {
+.designex {
     &-btn {
         margin: 5em 0;
 
@@ -51,18 +51,19 @@
 
         &-item {
             margin-bottom: 7em;
+            width: 40%;
 
 
             &-pic {
                 position: relative;
-                width: 830px;
+                width: 100%;
 
-                &:hover .designEx-hover {
+                &:hover .designex-hover {
                     opacity: 100;
                     transition: all 0.1s;
                 }
 
-                .designEx-hover {
+                .designex-hover {
                     transition: all 0.1s;
                     opacity: 0;
                     width: 100%;
@@ -152,28 +153,10 @@
 }
 
 
-@media (max-width:1729px) {
-    .designEx {
 
 
-
-        .container {
-
-            &-item {
-                width: 40%;
-
-                &-pic {
-                    width: 100%;
-                }
-
-
-            }
-        }
-    }
-}
-
-@media (max-width:1000px) {
-    .designEx {
+@media (max-width:992px) {
+    .designex {
 
         section {
             width: 80%;
@@ -192,12 +175,12 @@
     }
 }
 
-@media (max-width:700px) {
-    .designEx {
+@media (max-width:768px) {
+    .designex {
 
         section {
             width: 80%;
-            font-size: 18px;
+            font-size: 16px;
         }
 
 
@@ -210,15 +193,6 @@
 
 
             }
-        }
-    }
-}
-
-@media (max-width:650px) {
-    .designEx {
-
-        section {
-            font-size: 16px;
         }
 
         &-btn {
@@ -240,10 +214,8 @@
     }
 }
 
-
-
-@media (max-width:436px) {
-    .designEx {
+@media (max-width:576px) {
+    .designex {
 
         section {
             font-size: 14px;
@@ -254,7 +226,7 @@
         &-btn {
 
             ul {
-                column-gap: 10px;
+                column-gap: 1%;
 
                 li {
                     margin: 0 2px;
@@ -262,31 +234,8 @@
                     .btn {
 
                         font-size: 14px;
-                        width: 80px;
-                    }
+                        width: 100%;
 
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:366px) {
-    .designEx {
-
-
-        &-btn {
-
-            ul {
-                column-gap: 5px;
-
-                li {
-                    margin: 0 0px;
-
-                    .btn {
-
-                        font-size: 12px;
-                        width: 70px;
                     }
 
                 }

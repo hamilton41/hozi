@@ -88,7 +88,7 @@
 
 
 
-@media (max-width:800px) {
+@media (max-width:768px) {
     .container {
         .section-hero {
             &-img {
@@ -146,29 +146,7 @@
 
 }
 
-@media (max-width:600px) {
-
-
-    .section-main {
-
-        &-text {
-
-
-            .title {
-                font-size: 28px;
-            }
-
-            section {
-                font-size: 16px;
-            }
-        }
-
-
-    }
-
-}
-
-@media (max-width:514px) {
+@media (max-width:576px) {
 
 
     .section-main {
@@ -190,7 +168,8 @@
 
 }
 
-@media(max-width:1280px) {
+
+@media(max-width:1400px) {
     .index {
         .white {
             display: block;

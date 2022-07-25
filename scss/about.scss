@@ -33,10 +33,11 @@
         section {
             margin-left: 6em;
             line-height: 1.7em;
+            width: 594px;
         }
 
         &-pic {
-            width: 58.5%;
+            width: 50%;
 
             img {
                 width: 100%;
@@ -56,6 +57,7 @@
             justify-content: center;
 
             img {
+                width: 20%;
                 margin: 0 30px;
                 box-shadow: 0px 4px 10px 0px rgba(88, 88, 88, 0.39);
             }
@@ -66,38 +68,40 @@
 
 
 
-@media(max-width:1750px) {
+
+
+
+@media(max-width:1400px) {
     .about {
-        section {}
+
+
+        .title {
+            margin: 3em auto 2em;
+            width: 600px;
+        }
+
+        .subtitle {
+            margin: auto !important;
+        }
 
         .container {
+            flex-direction: column;
+
+
+            section {
+                margin: 0 auto 3em !important;
+                width: unset;
+            }
+
             &-pic {
-                width: 55% !important;
+                margin: auto;
+                width: 100% !important;
             }
 
         }
     }
 
 
-}
-
-@media(max-width:1615px) {
-    .about {
-        section {}
-
-        .container {
-            &-pic {
-                width: 50% !important;
-            }
-
-        }
-    }
-
-
-}
-
-
-@media(max-width:1590px) {
     .designGroup {
         background-color: $white;
         padding: 2em 1em;
@@ -120,54 +124,9 @@
     }
 }
 
-@media(max-width:1464px) {
-    .about {
-        section {}
-
-        .container {
-            &-pic {
-                width: 47% !important;
-            }
-
-        }
-    }
 
 
-}
-
-@media(max-width:1370px) {
-    .about {
-
-
-        .title {
-            margin: 3em auto 2em;
-            width: 600px;
-        }
-
-        .subtitle {
-            margin: auto !important;
-        }
-
-        .container {
-            flex-direction: column;
-
-
-            section {
-                margin: 0 auto 3em !important;
-            }
-
-            &-pic {
-                margin: auto;
-                width: 100% !important;
-            }
-
-        }
-    }
-
-
-}
-
-@media(max-width:1000px) {
+@media(max-width:992px) {
     .designGroup {
 
         &-title {
@@ -182,13 +141,13 @@
 
 
             img {
-                width: 40%;
+                width: 40% !important;
             }
         }
     }
 }
 
-@media(max-width:684px) {
+@media(max-width:768px) {
     .about {
         .title {
             width: 80%;
@@ -196,31 +155,14 @@
     }
 }
 
-@media(max-width:611px) {
-    .about {
-        section {
-            font-size: 18px;
-        }
-    }
-}
 
-@media(max-width:560px) {
+@media(max-width:576px) {
     .about {
         section {
             font-size: 16px;
         }
     }
-}
 
-@media(max-width:503px) {
-    .about {
-        section {
-            font-size: 14px;
-        }
-    }
-}
-
-@media(max-width:440px) {
     .about {
 
         .subtitle {
@@ -233,7 +175,7 @@
 
                 &.top {
                     width: 30px;
-                    right: 10px;
+                    left: 270px;
                     top: -20px;
                 }
 

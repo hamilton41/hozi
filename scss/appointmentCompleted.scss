@@ -62,7 +62,7 @@
     }
 }
 
-@media(max-width:1341px) {
+@media(max-width:1400px) {
     .appointmentCompleted {
         &::after {
             height: 0;
@@ -73,7 +73,7 @@
     }
 }
 
-@media (max-width:650px) {
+@media (max-width:768px) {
     .appointmentCompleted {
         .text-2 {
             width: 100%;
@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width:440px) {
+@media (max-width:576px) {
     .appointmentCompleted {
         .title {
             font-size: 24px;

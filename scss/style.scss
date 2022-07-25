@@ -1,6 +1,7 @@
+@import 'initial';
 @import 'color';
 @import 'variable';
-@import 'designEx';
+@import 'designex';
 @import 'index';
 @import 'about';
 @import 'news';
@@ -10,13 +11,64 @@
 @import 'product';
 
 
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+.title {
+    font-size: $large;
+    letter-spacing: 4px;
+    font-weight: 450;
+    line-height: 1.5em;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 1.5em;
+}
+
+.big-title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+section {
+    font-size: $mid;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.big-btn {
+    background-color: $black;
+    width: 266px;
+    height: 72px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+
 body {
     background-color: $theme-color;
 }
 
 
 
-.white {
+.white-bg-header {
     box-shadow: 0px 2px 6px 0px rgba(128, 128, 128, 0.527);
     width: 100%;
     z-index: 1;
@@ -54,7 +106,7 @@ body {
             position: absolute;
             right: 25px;
 
-            .picked::after {
+            .activate::after {
                 width: 97%;
                 height: 2px;
                 background-color: $black;
@@ -230,7 +282,7 @@ body {
 
 }
 
-.black {
+.black-font-footer {
     .footer {
         div {
             color: black;
@@ -240,7 +292,7 @@ body {
     }
 }
 
-@media (max-width:1072px) {
+@media (max-width:1200px) {
 
     .footer {
         padding: 2em 0 12px;
@@ -271,8 +323,8 @@ body {
     }
 }
 
-@media (max-width:1160px) {
-    .white {
+@media (max-width:1200px) {
+    .white-bg-header {
         .header {
             justify-content: center;
 
@@ -282,9 +334,58 @@ body {
                 left: 20px;
             }
 
+
             &-nav {
-                display: none;
+                box-shadow: inset -2px 0px 5px 0px rgba(138, 138, 138, 0.39);
+                background-color: $theme-color;
+                display: block;
+                position: fixed;
+                top: 0;
+                left: -220px;
+                animation: b 0.2s;
+                width: 220px;
+                height: 100vh;
+                padding-top: 6em;
+
+                .activate::after {
+                    height: 0px;
+                }
+
+                &-list {
+
+                    ul {
+                        flex-direction: column;
+                        width: 88%;
+                        align-items: center;
+
+                        li {
+
+                            img {
+                                display: inline-block;
+                            }
+
+                            margin: 1em 0;
+                        }
+                    }
+                }
+
+                &-icon {
+                    margin-top: 12em;
+                    margin-left: 3em;
+
+                    li {
+                        margin-right: 10px;
+                    }
+                }
+
+                &-languageSwitch {
+                    position: absolute;
+                    top: 2.5em;
+                    margin-left: 41px;
+                }
+
             }
+
 
             &-logo {
                 position: relative;
@@ -294,81 +395,58 @@ body {
     }
 
     body {
+        position: relative;
         left: 0px;
+        transition: left 0.2s;
     }
 
-    .white {
+    .white-bg-header {
         .header {
-            &-nav {
-                left: -220px;
-            }
+            &-nav {}
         }
     }
 
     .nav-open {
         overflow-x: hidden;
-        position: relative;
         left: 220px;
+        transition: left 0.2s;
 
 
-        .white {
-            .header {
-                &-nav {
-                    box-shadow: inset -2px 0px 5px 0px rgba(138, 138, 138, 0.39);
-                    background-color: $theme-color;
-                    display: block;
-                    width: 220px;
-                    top: 0;
-                    left: 0px;
-                    height: 100vh;
-                    position: fixed;
-                    padding-top: 6em;
+        @keyframes a {
+            0% {
+                left: -220px;
+            }
 
-                    .picked::after {
-                        height: 0px;
-                    }
+            100% {
+                left: 0px;
+            }
 
-                    &-list {
+        }
 
-                        ul {
-                            flex-direction: column;
-                            width: 88%;
-                            align-items: center;
+        @keyframes b {
+            0% {
+                left: 0px;
+            }
 
-                            li {
+            100% {
+                left: -220px;
+            }
 
-                                img {
-                                    display: inline-block;
-                                }
+        }
 
-                                margin: 1em 0;
-                            }
-                        }
-                    }
-
-                    &-icon {
-                        margin-top: 12em;
-                        margin-left: 3em;
-
-                        li {
-                            margin-right: 10px;
-                        }
-                    }
-
-                    &-languageSwitch {
-                        position: absolute;
-                        top: 2.5em;
-                        margin-left: 41px;
-                    }
-
-                }
+        .header {
+            &-nav {
+                left: 0px;
+                animation: a 0.2s;
             }
         }
+
+
     }
 
 }
 
-@media(max-width:870px) {
+@media(max-width:992px) {
     .messenger-btn {
         display: none;
     }
