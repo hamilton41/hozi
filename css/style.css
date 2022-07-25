@@ -1567,6 +1567,8 @@ body {
   }
 
   .nav-open {
+    width: 100%;
+    position: fixed;
     overflow-x: hidden;
     left: 220px;
     transition: left 0.2s;
