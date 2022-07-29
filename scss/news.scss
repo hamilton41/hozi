@@ -71,18 +71,26 @@
 
 @media (max-width:1400px) {
     .news {
+        margin: 2em 0.2em;
+
         &-item {
-            flex-direction: column;
+            margin: 5em 0em;
 
             &-pic {
                 width: 80%;
             }
 
             &-text {
-                padding: 50px;
-                width: 80%;
+                padding: 20px;
+                width: 70%;
 
-                section {}
+                .title {
+                    margin-left: 10%;
+                }
+
+                section {
+                    width: 100%;
+                }
             }
         }
     }
@@ -93,6 +101,8 @@
         margin: 2em 0;
 
         &-item {
+            flex-direction: column;
+
             margin: 5em 0;
             width: 100%;
             flex-direction: column;
